@@ -109,16 +109,16 @@ bash
 git clone https://github.com/your-username/student-management.git
 cd student-management
 
-###2️⃣ Install Dependencies
+### 2️⃣ Install Dependencies
 pip install flask
 
-###3️⃣ Run the Application
+### 3️⃣ Run the Application
 python app.py
 
-###4️⃣ Open in Browser
+### 4️⃣ Open in Browser
 http://127.0.0.1:5000/
 
-🔑 Default Credentials
+### 🔑 Default Credentials
 Admin
 Username: Nanisha
 Password: python
@@ -131,12 +131,12 @@ Login using Student ID
 Default password: 1234
 Must change password on first login
 
-🔐 Password Security
+### 🔐 Password Security
 Passwords are stored using hashing (Werkzeug)
 Cannot be retrieved once stored
 Admin can reset passwords to default
 
-📊 Sample Functional Flow
+### 📊 Sample Functional Flow
 Admin logs in
 Adds a student
 System auto-creates user account
@@ -144,7 +144,7 @@ Student logs in using ID
 Forced password change
 Student views report with chart
 
-🧠 Key Concepts Used
+### 🧠 Key Concepts Used
 Object-Oriented Programming (OOP)
 File Handling (JSON)
 CRUD Operations
@@ -152,20 +152,20 @@ Role-Based Access Control
 Exception Handling
 Data Visualization
 
-🎯 Highlights
+### 🎯 Highlights
 Clean UI with Bootstrap
 Secure authentication system
 Real-time data updates
 Analytical reports with charts
 Modular and scalable design
 
-🚀 Future Enhancements
+### 🚀 Future Enhancements
 Export reports (PDF/CSV)
 Dashboard analytics
 Database integration (MySQL)
 Email-based password reset
 Graphical dashboard charts
 
-🏆 Conclusion
+### 🏆 Conclusion
 
 This project demonstrates a complete student management system with secure authentication, structured data handling, and analytical reporting using Flask.
