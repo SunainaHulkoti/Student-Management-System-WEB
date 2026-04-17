@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Sort Students</h2>
+
+<a href="/dashboard" class="btn btn-secondary mb-3">⬅ Back</a>
+
+<form method="POST">
+    <input type="radio" name="criteria" value="name" required> By Name<br>
+    <input type="radio" name="criteria" value="percentage"> By Percentage<br><br>
+
+    <button class="btn btn-primary">Sort</button>
+</form>
+
+{% endblock %}

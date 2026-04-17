@@ -1,0 +1,91 @@
+{
+    "Nanisha": {
+        "password": "scrypt:32768:8:1$P94bqPn7xIjlI7t9$2e7bb57e6a12f13230277593c495c9a7fdc91a4bf7ba74f2ea13fed1c4bd21937e81934830113cbdbe5fa9efc1e8adaec1cba4aacdee7059164cf6748bf70598",
+        "role": "admin",
+        "student_id": null,
+        "first_login": false
+    },
+    "Preetha": {
+        "password": "scrypt:32768:8:1$a6ZdPKKeoG1ln8Gj$d81d0037d07f78764321cf7c1a6e11f3bbdf2a3eae880b9e0e7547d002387acf956dccb5f2e07536e14a4018d5c1f25db7799b4b77d5be6950505395e45c5293",
+        "role": "admin",
+        "student_id": null,
+        "first_login": false
+    },
+    "102": {
+        "password": "scrypt:32768:8:1$Ip3G92li9AZoccs4$a0c4074462b2a560ce0e7d94a183227025c83e64f214f3a0c46269caaf3140f1a0638e207a6b7d901240e6efe40d44e3d2a970a26ae6dbcd8b5dba462584d7a4",
+        "role": "user",
+        "student_id": 102,
+        "first_login": false,
+        "name": "Sakshi"
+    },
+    "103": {
+        "password": "scrypt:32768:8:1$Na11AAIWAxrdyCyr$5d6eed112d5daf31357f923ec34df72ed85e6d5cbdad69014a26768119c2ff9c1692d0acd85531115319122557c14e7e2ce247ef09f2bd24e0a6a44524e71ba5",
+        "role": "user",
+        "student_id": 103,
+        "first_login": true,
+        "name": "Sourabh"
+    },
+    "104": {
+        "password": "scrypt:32768:8:1$SsWLgn78hZ6v3RsS$f24e339b8da882323f6bfb023c54884a81e966076ecb8ce9f9a07463fa1d3c293c199ff5fb02569cd0f7bfd46cf36cce2c1fb20357805ee34cc9cf8c2498f4f5",
+        "role": "user",
+        "student_id": 104,
+        "first_login": true,
+        "name": "Samrudhi"
+    },
+    "105": {
+        "password": "scrypt:32768:8:1$nlrfhXqvYdUdTiL9$30b2ba07601c1940a733b61ba1699565757699bc2be2ed86f9fb4ad7834c0ea4aa3ea7c23b227726bb24c64590c672ba37caed66847d2bc070f9a798550aabac",
+        "role": "user",
+        "student_id": 105,
+        "first_login": true,
+        "name": "Joy"
+    },
+    "107": {
+        "password": "scrypt:32768:8:1$N1Nr6kPYr42911bm$ac37be7f72a12ecf3f18ee4face4c981679d1954de5a26f80c9caa1756a9759d14f3f667f2a9673cc946b9fcfd5704ace92ea0e1cb68f2c8a22951ba57307595",
+        "role": "user",
+        "student_id": 107,
+        "first_login": true,
+        "name": "Josh"
+    },
+    "108": {
+        "password": "scrypt:32768:8:1$sJQswCd9uABEmj0V$7579afa43da8f9fe623823a8289c92fb4e7f89f26b713b3d59b3f82034d83037693295e74978eafdd0300320a89fbc689f25ea648ad24c8e325c6fe6dbcdeb7f",
+        "role": "user",
+        "student_id": 108,
+        "first_login": true,
+        "name": "James"
+    },
+    "101": {
+        "password": "scrypt:32768:8:1$znynLyBVv93OIRcw$b788f2d28e2aca455ea3b393b2a83df6a8f6dec193ce8147524b56ed3854c909046b63ac37a184849bc1c27d75e39abe21dc86fa325ef5f06f0df8b40fd0fdfa",
+        "role": "user",
+        "student_id": 101,
+        "first_login": true,
+        "name": "Luke"
+    },
+    "110": {
+        "password": "scrypt:32768:8:1$VsAeNhjK1dvNpXzn$05935fbd156f209188ce8f203c40465fa1c5db181629bf0424576cf3a480e5d8f002a68e4bc8de9d23b7becde4da1efb9c4fedf0e158813c05f5d2f1ade4bba5",
+        "role": "user",
+        "student_id": 110,
+        "first_login": false,
+        "name": "FURQAN"
+    },
+    "106": {
+        "password": "scrypt:32768:8:1$fPQXUTIlLs1ZMyIC$c4be38b3d1b3e3b9035a9de7710c5ab5b2a22107897cb359d3a8b45fb0507e1b266f282dc3456e6743500f18bc1bc8f4894b0ee4b104f0059b65fc6dafb5d6df",
+        "role": "user",
+        "student_id": 106,
+        "first_login": true,
+        "name": "Smith"
+    },
+    "109": {
+        "password": "scrypt:32768:8:1$5J8ISfaJqLySZkw8$ca9859fbc6ac92cdf73a83ca97b56672236d7f21d4caddc72a065d7329b4c3952f29819d28583d3d621a094beee3f9777e8d72f9115c7b377ac12ad86f18b465",
+        "role": "user",
+        "student_id": 109,
+        "first_login": true,
+        "name": "Sunaina"
+    },
+    "111": {
+        "password": "scrypt:32768:8:1$T8ZQDnZmrPURCDA5$535cffffc7ace622ec2dd8e602e35cbc8f6d16a76178f2b2e0eab33637fd06da176a05a5b9502d294afaf19140eaa9b0adfdfd0adc1d703c6a3afdec8ac2c01e",
+        "role": "user",
+        "student_id": 111,
+        "first_login": true,
+        "name": "Ghost"
+    }
+}
