@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Search Student</h2>
+
+<a href="/dashboard" class="btn btn-secondary mb-3">⬅ Back</a>
+
+{% if error %}
+<div class="alert alert-danger">{{ error }}</div>
+{% endif %}
+
+<form method="POST">
+    <input name="query" class="form-control mb-2" placeholder="Enter ID or Name" required>
+    <button class="btn btn-primary">Search</button>
+</form>
+
+<br>
+
+{% if results %}
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Student ID</th>
+            <th>Name</th>
+            <th>Percentage</th>
+            <th>Grade</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for sid, s in results %}
+        <tr>
+            <td>{{ sid }}</td>
+            <td>{{ s.name }}</td>
+            <td>{{ "%.2f"|format(s.percentage) }}%</td>
+            <td>{{ s.grade }}</td>
+            <td>{{ s.total }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<p class="text-muted">No matching student found.</p>
+{% endif %}
+
+{% endblock %}
