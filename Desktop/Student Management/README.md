@@ -1,131 +1,171 @@
-# Student Management System CLI
+# 🎓 Smart Student Management System (Flask Web App)
 
-A command-line interface for managing student records, marks, and grades. Built with Python, this system supports role-based authentication (admin and student) with comprehensive student data management features.
+A full-stack, role-based web application built using Flask that allows efficient management of student records, academic performance, and secure user access.
 
-## Features
-
-### Admin Features
-- ✅ **Add Student** - Register new students with their marks
-- ✅ **View All** - Display all student records in a formatted table
-- ✅ **Search** - Find students by ID or name
-- ✅ **Student Report** - View detailed report for a specific student
-- ✅ **Sort Students** - Sort by name or percentage
-- ✅ **Update Student** - Modify student information and marks
-- ✅ **Delete Student** - Remove student records
-- ✅ **Change Password** - Update admin password
-
-### Student Features
-- ✅ **View My Data** - Check personal academic records
-- ✅ **My Report** - Get detailed performance report
-- ✅ **Change Password** - Update student password
-
-### Subjects Tracked
-- Math
-- Science
-- Social
-- Computer
-- English
-- Language
-
-## Installation
-
-### Prerequisites
-- Python 3.6 or higher
-- No external dependencies required (uses only Python standard library)
-
-### Steps
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/student-management-system-cli.git
-cd student-management-system-cli
-```
-
-2. Run the application:
-```bash
-python main.py
-```
-
-## Usage
-
-### Initial Login
-1. Start the application
-2. Enter your Student ID/Username
-3. Enter your password
-4. On first login, you'll be prompted to change your default password
-
-### Admin Dashboard
-After logging in as admin, you can:
-- Add new students with marks (0-100 for each subject)
-- View all records in a formatted table
-- Search by student ID or name
-- Generate detailed reports
-- Sort students by name or percentage
-- Edit student information
-- Delete records
-
-### Student Dashboard
-After logging in as a student, you can:
-- View your academic records
-- Check your performance report (total, percentage, grade)
-- Change your password
-
-## Grading System
-
-Grades are calculated based on percentage:
-- **A** : 90% and above
-- **B** : 75% - 89%
-- **C** : 50% - 74%
-- **F** : Below 50%
-
-## File Structure
-
-```
-├── main.py          # Main application entry point
-├── auth.py          # Authentication and user management
-├── model.py         # Student data model
-├── service.py       # Student operations and business logic
-├── users.txt        # User credentials (JSON format)
-├── data.txt         # Student records (JSON format)
-└── README.md        # This file
-```
-
-## Data Storage
-
-- **users.txt** - Stores user credentials and roles
-- **data.txt** - Stores all student records and their marks
-
-Both files use JSON format for easy readability and modification.
-
-## Security Notes
-
-- Passwords are stored in plain text (not for production use)
-- For production, implement proper password hashing (bcrypt, argon2)
-- Use environment variables for sensitive data
-- Implement database instead of JSON files
-
-## Future Enhancements
-
-- [ ] Database integration (SQL)
-- [ ] Password encryption/hashing
-- [ ] REST API interface
-- [ ] Web UI dashboard
-- [ ] Email notifications
-- [ ] Backup and restore functionality
-- [ ] Advanced analytics and insights
-- [ ] Multi-class management
-
-## License
-
-This project is open source and available under the MIT License.
-
-## Author
-
-Created as a Student Management System CLI project.
-
-## Support
-
-For issues, feature requests, or contributions, please create an issue or pull request on GitHub.
+This project upgrades a console-based system into a modern web application with authentication, analytics, and a clean user interface.
 
 ---
 
-**Note**: This is a learning project suitable for educational purposes. For production use, implement proper security measures, database integration, and error handling.
+## 🚀 Features
+
+### 🔐 Authentication & Security
+- Role-based login (Admin & Student)
+- Password hashing using Werkzeug
+- Strong password validation (uppercase, lowercase, numbers)
+- First-time login password change enforcement
+- Admin-controlled password reset system
+
+---
+
+### 👨‍🏫 Admin Features
+- Add new students (auto user account creation)
+- View all students in a structured table
+- Search by ID or name
+- Update student details (with skip option)
+- Delete student records
+- Reset student passwords
+- Sort students by name or percentage
+
+---
+
+### 👨‍🎓 Student Features
+- Login using Student ID
+- View personal details
+- View performance report
+- Change password securely
+
+---
+
+### 📊 Performance & Analytics
+- Subject-wise marks tracking
+- Automatic calculation of:
+  - Total
+  - Percentage
+  - Grade
+- Visual charts using Chart.js
+- Statistics:
+  - Average marks
+  - Highest score
+  - Lowest score
+
+---
+
+### 🗂️ Data Management
+- Persistent storage using JSON files (`data.txt`, `users.txt`)
+- Auto-sync between file and application
+- Handles duplicate and invalid entries
+
+---
+
+### ⚠️ Error Handling & Validation
+- Input validation for all fields
+- Marks range check (0–100)
+- Prevents empty inputs
+- Handles missing records gracefully
+
+---
+
+## 🛠️ Tech Stack
+
+- **Backend:** Flask (Python)
+- **Frontend:** HTML, Bootstrap
+- **Database:** JSON (File Handling)
+- **Charts:** Chart.js
+- **Security:** Werkzeug (Password Hashing)
+
+---
+
+## 📁 Project Structure
+project/
+│
+├── app.py
+├── model.py
+├── service.py
+├── auth.py
+├── data.txt
+├── users.txt
+│
+├── templates/
+│ ├── base.html
+│ ├── login.html
+│ ├── dashboard.html
+│ ├── add_student.html
+│ ├── view.html
+│ ├── update.html
+│ ├── report.html
+│ ├── search.html
+│ ├── change_password.html
+│ └── force_change.html
+
+
+---
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the Repository
+
+bash
+git clone https://github.com/your-username/student-management.git
+cd student-management
+
+###2️⃣ Install Dependencies
+pip install flask
+
+###3️⃣ Run the Application
+python app.py
+
+###4️⃣ Open in Browser
+http://127.0.0.1:5000/
+
+🔑 Default Credentials
+Admin
+Username: Nanisha
+Password: python
+
+Username: Preetha
+Password: sql
+
+Student
+Login using Student ID
+Default password: 1234
+Must change password on first login
+
+🔐 Password Security
+Passwords are stored using hashing (Werkzeug)
+Cannot be retrieved once stored
+Admin can reset passwords to default
+
+📊 Sample Functional Flow
+Admin logs in
+Adds a student
+System auto-creates user account
+Student logs in using ID
+Forced password change
+Student views report with chart
+
+🧠 Key Concepts Used
+Object-Oriented Programming (OOP)
+File Handling (JSON)
+CRUD Operations
+Role-Based Access Control
+Exception Handling
+Data Visualization
+
+🎯 Highlights
+Clean UI with Bootstrap
+Secure authentication system
+Real-time data updates
+Analytical reports with charts
+Modular and scalable design
+
+🚀 Future Enhancements
+Export reports (PDF/CSV)
+Dashboard analytics
+Database integration (MySQL)
+Email-based password reset
+Graphical dashboard charts
+
+🏆 Conclusion
+
+This project demonstrates a complete student management system with secure authentication, structured data handling, and analytical reporting using Flask.
